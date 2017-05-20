@@ -35,7 +35,6 @@ class AppComponent extends React.Component {
 
     var controllerUnits = [],
         imgFigures = [];
-    console.log(imageDatas);
     imageDatas.forEach(function(value) {
 
       imgFigures.push(<ImgFigure data={value}/>);
@@ -44,7 +43,6 @@ class AppComponent extends React.Component {
     return (
       <section className = "stage">
         <section className="img-sec">
-
           {imgFigures}
         </section>
         <nav className="controller-nav">
